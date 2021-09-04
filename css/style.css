@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Poppins',
+        sans-serif;
+    background: #fff;
+}
+
+
+/* 
+    I -  Utilitaires
+    II -  Nav Section
+
+
+*/
+/* ------------------------------------- */
+/* Utilitaires :  */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+/* ------------------------------------- */
+/* II - NAV SECTION */
+header {
+    width: 100%;
+}
+
+.nav-header {
+    width: 95%;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.left-nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: red;
+    font-weight: bold;
+}
+
+.right-nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-profile {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background: #48BF84
+}
+
+.profile-picture {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.score {
+    margin-left: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.notifications {
+    position: relative;
+    color: rgb(231, 155, 33);
+    font-size: 28px;
+}
+
+.notifications-number {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    height: 15px;
+    width: 15px;
+    background: rgb(170, 9, 9);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 8px;
+    display: grid;
+    place-items: center;
+}
+
+.localisation-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#localisation {
+    width: 50%;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px #898989;
+    padding: 5px 20px;
+}
+
+/* END HEADER SECTION */
+/* --------------------------------------- */
+
+/* II- Home Section */
+main {
+    width: 100%;
+    padding-left: 10px
+}
+
+.main-title {
+    margin-top: 50px;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-title i {
+    padding: 20px;
+    border-radius: 50%;
+    background: #737a843b;
+}
+
+.search-wrapper {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-wrapper input {
+    border: none;
+    width: 70%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px #898989;
+}
+.search-wrapper input:focus-visible {
+    outline: none
+}
+.discount-wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+.discount-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.card-discount-wrapper {
+    width: 80vw;
+    height: 90px;
+    border-radius: 10px;
+    background: purple;
+    padding: 20px;
+    color: white;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.card-discount-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px 0;
+}
+.card-discount-subtitle {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 5px 0;
+}
+.categories-wrapper {
+    margin-top: 20px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.categories-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.category-chip {
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 0 10px;
+    box-shadow: 0px 0px 5px 0px #898989;
+    flex-shrink: 0;
+    
+}
